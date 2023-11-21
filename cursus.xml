@@ -127,6 +127,6 @@
     <course title="BDD 2">
         <semester>S6</semester>
         <new-concept></new-concept>
-        <dependency-concept>bbase-de-donnee</dependency-concept>
+        <dependency-concept>base-de-donnee</dependency-concept>
     </course>
 </cursus>

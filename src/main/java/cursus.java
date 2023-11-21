@@ -10,7 +10,6 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.EnumMap;
-import java.util.EnumSet;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
@@ -22,7 +21,6 @@ import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.mapping;
-import static java.util.stream.Collectors.toCollection;
 import static java.util.stream.Collectors.toList;
 import static java.util.stream.Collectors.toMap;
 
@@ -268,7 +266,9 @@ class cursus {
 //      }
 //    }
 
+    var mermaidFiled = Path.of("cursus.mmd");
     var mermaidText = generateMermaidFlowchart(courses, coursePerSemesterMap, courseDependencyWithConceptMap);
-    Files.writeString(Path.of("cursus.mmd"), mermaidText);
+    Files.writeString(mermaidFiled, mermaidText);
+    System.out.println(mermaidFiled + " generated");
   }
 }
