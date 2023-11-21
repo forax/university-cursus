@@ -1,13 +1,13 @@
 <cursus>
     <course title="AP1 / APP1">
        <semester>S1</semester>
-       <new-concept>variable, test, boucle, python-syntaxe, programmation-imperative</new-concept>
+       <new-concept>python, prog-struturee</new-concept>
        <dependency-concept></dependency-concept>
     </course>
     <course title="Projet1">
        <semester>S1</semester>
        <new-concept>rapport-de-developement</new-concept>
-       <dependency-concept>variable, test, boucle, python-syntaxe</dependency-concept>
+       <dependency-concept>python, prog-struturee</dependency-concept>
     </course>
     <course title="Remediation 1">
         <semester>S1</semester>
@@ -18,7 +18,7 @@
     <course title="AP2 / APP2">
         <semester>S2</semester>
         <new-concept>algorithme, recursivite, trie, complexite</new-concept>
-        <dependency-concept>variable, test, boucle, python-syntaxe, programmation-imperative</dependency-concept>
+        <dependency-concept>python, prog-struturee</dependency-concept>
     </course>
     <course title="Projet2">
         <semester>S2</semester>
@@ -32,19 +32,19 @@
     </course>
     <course title="Programmation Web">
         <semester>S2</semester>
-        <dependency-concept>variable, test, boucle</dependency-concept>
-        <new-concept>HTML, CSS, javascript-syntaxe, appel-asynchrone</new-concept>
+        <new-concept>HTML, CSS, JavaScript, appel-asynchrone</new-concept>
+        <dependency-concept>prog-struturee</dependency-concept>
     </course>
 
     <course title="C1">
         <semester>S3</semester>
-        <new-concept>c-syntaxe, liste-chainee</new-concept>
-        <dependency-concept>programmation-imperative</dependency-concept>
+        <new-concept>C, liste-chainee</new-concept>
+        <dependency-concept>prog-struturee</dependency-concept>
     </course>
     <course title="BDD1">
         <semester>S3</semester>
-        <new-concept>notion-ensembliste, algebre-relationel, base-de-donnee-relationnel</new-concept>
-        <dependency-concept>HTML, CSS, python-syntaxe</dependency-concept>
+        <new-concept>ensemble, algebre-relationel, base-de-donnee-relationnel</new-concept>
+        <dependency-concept>HTML, CSS, python</dependency-concept>
     </course>
     <course title="Labo MathInfo">
         <semester>S3</semester>
@@ -60,22 +60,22 @@
     <course title="C2">
         <semester>S4</semester>
         <new-concept>allocation-dynamique, compilation-separee</new-concept>
-        <dependency-concept>c-syntaxe</dependency-concept>
+        <dependency-concept>C</dependency-concept>
     </course>
     <course title="Algo des arbres">
         <semester>S4</semester>
         <new-concept>arbre, parcours-d'arbre, file, tas, AVL, structure-recursive</new-concept>
-        <dependency-concept>c-syntaxe, liste-chainee</dependency-concept>
+        <dependency-concept>C, liste-chainee</dependency-concept>
     </course>
     <course title="Automates">
         <semester>S4</semester>
         <new-concept>automate, expression-reguliere, vocabulaire-graphe</new-concept>
-        <dependency-concept>notion-ensembliste</dependency-concept>
+        <dependency-concept>ensemble</dependency-concept>
     </course>
     <course title="Architecture des systèmes">
         <semester>S4</semester>
         <new-concept>shell, assembleur</new-concept>
-        <dependency-concept>notion-ensembliste</dependency-concept>
+        <dependency-concept>ensemble</dependency-concept>
     </course>
     <course title="Math pour l'info">
         <semester>S4</semester>
@@ -86,17 +86,17 @@
     <course title="C3">
         <semester>S5</semester>
         <new-concept></new-concept>
-        <dependency-concept>c-syntaxe</dependency-concept>
+        <dependency-concept>C</dependency-concept>
     </course>
     <course title="Java">
         <semester>S5</semester>
-        <new-concept>java-syntaxe, programmation-oriente-objet, encapsulation, interface, type-parametre, evaluation-paresseuse</new-concept>
-        <dependency-concept>c-syntaxe, allocation-dynamique, compilation-separee</dependency-concept>
+        <new-concept>Java, prog-orient-objet, encapsulation, interface, type-parametre, evaluation-paresseuse</new-concept>
+        <dependency-concept>C, allocation-dynamique, compilation-separee</dependency-concept>
     </course>
     <course title="Analyse Syntaxique">
         <semester>S5</semester>
         <new-concept>grammaire, automate-a-pile</new-concept>
-        <dependency-concept>c-syntaxe, automate, expression-reguliere</dependency-concept>
+        <dependency-concept>C, automate, expression-reguliere</dependency-concept>
     </course>
     <course title="Reseaux">
         <semester>S5</semester>
@@ -112,16 +112,16 @@
     <course title="Programmation Système">
         <semester>S6</semester>
         <new-concept>appel-systeme, modele-de-memoire</new-concept>
-        <dependency-concept>c-syntaxe</dependency-concept>
+        <dependency-concept>C</dependency-concept>
     </course>
     <course title="Compilation">
         <semester>S6</semester>
         <new-concept></new-concept>
-        <dependency-concept>c-syntaxe, assembleur, grammaire, appel-systeme</dependency-concept>
+        <dependency-concept>C, assembleur, grammaire, appel-systeme</dependency-concept>
     </course>
     <course title="Programmation Fonctionnelle">
         <semester>S6</semester>
-        <new-concept>haskell-syntaxe</new-concept>
+        <new-concept>haskell-syntaxe, prog-fonctionnelle</new-concept>
         <dependency-concept>structure-recursive, evaluation-paresseuse</dependency-concept>
     </course>
     <course title="BDD 2">
