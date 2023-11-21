@@ -23,6 +23,7 @@ import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.mapping;
 import static java.util.stream.Collectors.toList;
 import static java.util.stream.Collectors.toMap;
+import static java.util.stream.Collectors.toSet;
 
 class cursus {
 
@@ -60,6 +61,19 @@ class cursus {
       var courseList = entry.getValue();
       if (courseList.size() > 1) {
         System.err.println("concept " + concept + " is declared as new by " + courseList);
+      }
+    }
+  }
+
+  static void checkConceptDependencyAllExist(List<Course> courses) {
+    var concepts = courses.stream()
+        .flatMap(course -> course.newConcepts.stream())
+        .collect(toSet());
+    for(var course: courses) {
+      for(var dependency: course.dependencies) {
+        if (!concepts.contains(dependency)) {
+          System.err.println("no concept " + dependency + " defined for " + course);
+        }
       }
     }
   }
@@ -252,6 +266,7 @@ class cursus {
   public static void main(String[] args) throws IOException, ParserConfigurationException, SAXException {
     var courses = parseXML(Path.of("cursus.xml"));
     checkNewConceptsAreOnlyDeclaredOnce(courses);
+    checkConceptDependencyAllExist(courses);
 
     var coursePerSemesterMap = computeCoursePerSemesterMap(courses);
     var conceptPerSemesterMap = computeConceptPerSemesterMap(coursePerSemesterMap);

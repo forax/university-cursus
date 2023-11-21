@@ -38,12 +38,12 @@
 
     <course title="C1">
         <semester>S3</semester>
-        <new-concept>c-syntax, liste-chainee</new-concept>
+        <new-concept>c-syntaxe, liste-chainee</new-concept>
         <dependency-concept>programmation-imperative</dependency-concept>
     </course>
     <course title="BDD1">
         <semester>S3</semester>
-        <new-concept>notion-ensembliste, algebre-relationel, base-de-donnée-relationnel</new-concept>
+        <new-concept>notion-ensembliste, algebre-relationel, base-de-donnee-relationnel</new-concept>
         <dependency-concept>HTML, CSS, python-syntaxe</dependency-concept>
     </course>
     <course title="Labo MathInfo">
@@ -65,7 +65,7 @@
     <course title="Algo des arbres">
         <semester>S4</semester>
         <new-concept>arbre, parcours-d'arbre, file, tas, AVL, structure-recursive</new-concept>
-        <dependency-concept>c-syntaxe, liste-chainée</dependency-concept>
+        <dependency-concept>c-syntaxe, liste-chainee</dependency-concept>
     </course>
     <course title="Automates">
         <semester>S4</semester>
@@ -91,7 +91,7 @@
     <course title="Java">
         <semester>S5</semester>
         <new-concept>java-syntaxe, programmation-oriente-objet, encapsulation, interface, type-parametre, evaluation-paresseuse</new-concept>
-        <dependency-concept>c-syntaxe, allocation-dynamique, compilation-separee, entree-sortie</dependency-concept>
+        <dependency-concept>c-syntaxe, allocation-dynamique, compilation-separee</dependency-concept>
     </course>
     <course title="Analyse Syntaxique">
         <semester>S5</semester>
@@ -127,6 +127,6 @@
     <course title="BDD 2">
         <semester>S6</semester>
         <new-concept></new-concept>
-        <dependency-concept>base-de-donnee</dependency-concept>
+        <dependency-concept>base-de-donnee-relationnel</dependency-concept>
     </course>
 </cursus>
