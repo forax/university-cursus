@@ -59,7 +59,7 @@
 
     <course title="C2">
         <semester>S4</semester>
-        <new-concept>allocation-dynamique, compilation-separee</new-concept>
+        <new-concept>C, allocation-dynamique, compilation-separee</new-concept>
         <dependency-concept>C</dependency-concept>
     </course>
     <course title="Algo des arbres">
@@ -85,7 +85,7 @@
 
     <course title="C3">
         <semester>S5</semester>
-        <new-concept></new-concept>
+        <new-concept>C</new-concept>
         <dependency-concept>C</dependency-concept>
     </course>
     <course title="Java">

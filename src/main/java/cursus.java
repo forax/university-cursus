@@ -59,7 +59,13 @@ class cursus {
     for (var entry : conceptListMap.entrySet()) {
       var concept = entry.getKey();
       var courseList = entry.getValue();
-      if (courseList.size() > 1) {
+
+      // remove re-exported concepts (concept in the new list and in the dependency list)
+      var courseListNoReExport = courseList.stream()
+          .filter(course -> !course.dependencies.contains(concept))
+          .toList();
+
+      if (courseListNoReExport.size() > 1) {
         System.err.println("concept " + concept + " is declared as new by " + courseList);
       }
     }
@@ -95,9 +101,9 @@ class cursus {
         for(var newConcept: course.newConcepts) {
           conceptMap.computeIfAbsent(newConcept, __ -> new ArrayList<>()).add(course);
         }
-        for(var newConcept: course.dependencies) {
+        /*for(var newConcept: course.dependencies) {
           conceptMap.computeIfAbsent(newConcept, __ -> new ArrayList<>()).add(course);
-        }
+        }*/
       }
       map.put(semester, conceptMap);
     }
